@@ -14,14 +14,8 @@ class Plane:
         self.side_doors_color = side_doors_color
         self.autopilot = autopilot
 
-        # create екземпляр класу
-airbus =  Plane(
-            side_text="Delta",
-            main_color="white",
-            addinal_colors=["red", "blue"],
-            side_doors_color=4,
-            autopilot=False,
-        )
+    def take_off (self):  # зліт
+        print(f"{self.side_text} takes off")
 
-print(f"Additional colors: {', '.join(airbus.addinal_colors)}")
-
+    def land (self):  # приземлення
+           print(f"{self.side_text} lans")
