@@ -15,13 +15,13 @@ class Plane:
         self.autopilot = autopilot
 
         # create екземпляр класу
-boeing =  Plane(
-            side_text="Southwind",
+airbus =  Plane(
+            side_text="Delta",
             main_color="white",
-            addinal_colors=["red"],
-            side_doors_color=5,
+            addinal_colors=["red", "blue"],
+            side_doors_color=4,
             autopilot=False,
         )
 
-print(f"Plane text: {boeing.side_text}")
+print(f"Additional colors: {', '.join(airbus.addinal_colors)}")
 
