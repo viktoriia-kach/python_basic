@@ -17,3 +17,13 @@ class Amoeba:
     def eat(self, subject):
         print(f"{self.name.capitalize()} grows pseudopodia"
               f" to eat {subject}")
+
+if __name__ == '__main__':
+    print(Amoeba.describe())
+    # Output: Amoeba has single-cell organization and lives in water
+
+    amoeba = Amoeba("proteus")
+    amoeba.move("left")
+    # Output: Moves to the left with pseudopodia
+    amoeba.eat("bacteria")
+    # Output: Proteus grows pseudopodia to eat bacteria
